@@ -1,85 +1,32 @@
-.hero-banner {
-  background-color: #0f4c9c; /* Azul do fundo */
+.hero {
+  background: #0f4c9c;
+  color: #fff;
   padding: 40px 20px;
-  color: #ffffff;
-  font-family: 'Montserrat', Arial, sans-serif;
-}
-
-.hero-container {
-  max-width: 1100px;
-  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap; /* Faz o conteúdo ir para baixo no celular automaticamente */
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
+  font-family: sans-serif;
 }
 
-.hero-content {
-  flex: 1;
-  min-width: 280px;
+.hero h1 {
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
-.hero-title {
-  font-size: 2.2rem;
-  line-height: 1.2;
-  margin-bottom: 24px;
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-title .light-text {
-  font-weight: 400;
-  letter-spacing: 0.5px;
-}
-
-.hero-title .bold-text {
-  font-weight: 800;
-  letter-spacing: 0.5px;
-}
-
-.btn-matricula {
-  display: inline-block;
-  background-color: #ffffff;
+.btn {
+  background: #fff;
   color: #0f4c9c;
-  font-weight: 800;
-  font-size: 0.95rem;
-  padding: 12px 28px;
-  border-radius: 30px;
+  padding: 12px 24px;
+  border-radius: 25px;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-weight: bold;
+  display: inline-block;
 }
 
-.btn-matricula:hover {
-  background-color: #e6e6e6;
-  transform: translateY(-2px);
-}
-
-.hero-image {
-  flex: 1;
-  min-width: 280px;
-}
-
-.hero-image img {
+.hero img {
   width: 100%;
-  height: auto;
-  border-radius: 24px;
-  display: block;
-  object-fit: cover;
-}
-
-/* Ajuste para telas menores (smartphones) */
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-title {
-    font-size: 1.8rem;
-  }
-
-  .btn-matricula {
-    margin-bottom: 20px;
-  }
+  max-width: 450px;
+  border-radius: 20px;
 }
