@@ -1,0 +1,50 @@
+
+
+
+.container{
+    background-color: aqua;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.textRodape{
+    border: 5px solid;
+    padding: 100px;
+    margin: 10px;
+}
+
+/* -------------------------------------  FIM DO FOOTER ------------------------------------------ *
+
+/* Fundo azul da página */
+body {
+    background-color: #38a5d8;
+    font-family: Arial, sans-serif;
+}
+
+/* 1. CAIXA MÃE: Joga o vídeo e o lado direito LADO A LADO */
+.caixa-mae {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* 2. O BLOCO DA ESQUERDA e A COLUNA DA DIREITA dividem a tela em dois */
+.bloco, .coluna-direita {
+    flex: 1; /* Cada um ocupa 50% da tela */
+}
+
+/* 3. O SEGREDO DO LADO DIREITO: Empilhar um em cima do outro! */
+.coluna-direita {
+    display: flex;
+    flex-direction: column; /* Isso joga o login para BAIXO das redes sociais */
+    gap: 20px; /* Espaço entre a caixa de cima e a de baixo */
+}
+
+/* 4. A APARÊNCIA DAS CAIXAS BRANCAS */
+.bloco, .sub-bloco {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+}
